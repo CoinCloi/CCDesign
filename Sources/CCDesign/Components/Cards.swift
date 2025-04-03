@@ -23,3 +23,8 @@ extension View {
         self.modifier(CardStyle())
     }
 }
+
+#Preview(body: { 
+    Rectangle()
+        .cardStyle()
+})

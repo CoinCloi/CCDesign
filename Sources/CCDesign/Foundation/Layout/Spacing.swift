@@ -8,8 +8,8 @@
 import SwiftUI
 
 extension CGFloat {
-    public static let xs: CGFloat = 4
-    public static let small: CGFloat  = 8
-    public static let medium: CGFloat = 16
-    public static let large: CGFloat  = 24
+    static let xs = 4.0
+    static let small: CGFloat  = 8
+    static let medium: CGFloat = 16
+    static let large: CGFloat  = 24
 }
