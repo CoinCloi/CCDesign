@@ -19,7 +19,7 @@ struct CardStyle: ViewModifier {
 }
 
 extension View {
-    func cardStyle() -> some View {
+    public func cardStyle() -> some View {
         self.modifier(CardStyle())
     }
 }
