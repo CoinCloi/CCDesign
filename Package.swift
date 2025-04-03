@@ -10,7 +10,7 @@ import AppleProductTypes
 let package = Package(
     name: "CCDesign",
     platforms: [
-        .iOS("16.0")
+        .iOS("16.0"), .macOS(.v10_15)
     ],
     products: [
         .library(

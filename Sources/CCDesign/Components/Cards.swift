@@ -25,6 +25,10 @@ extension View {
 }
 
 #Preview(body: { 
-    Rectangle()
-        .cardStyle()
+    ZStack {
+        Color.white
+        Color.clear
+            .frame(width: 100, height: 100)
+            .cardStyle()
+    }
 })
