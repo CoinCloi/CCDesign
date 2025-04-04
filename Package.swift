@@ -10,15 +10,16 @@ import AppleProductTypes
 let package = Package(
     name: "CCDesign",
     platforms: [
-        .iOS("16.0"), .macOS(.v10_15)
+        .iOS("17.0"),
+        .macOS("10.15")
     ],
     products: [
         .library(
-            name: "CCDesign",
-            targets: ["CCDesign"]
+            name: "CCDesignSystem",
+            targets: ["CCDesignSystem"]
         ),
         .iOSApplication(
-            name: "Demo",
+            name: "CCDesign",
             targets: ["AppModule"],
             displayVersion: "1.0",
             bundleVersion: "1",
@@ -38,11 +39,13 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "CCDesign"
+            name: "CCDesignSystem"
         ),
         .executableTarget(
             name: "AppModule",
-            dependencies: ["CCDesign"],
+            dependencies: [
+                "CCDesignSystem"
+            ],
             path: "Demo",
             swiftSettings: [
                 .enableUpcomingFeature("BareSlashRegexLiterals")
