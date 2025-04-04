@@ -1,5 +1,5 @@
 import SwiftUI
-import CCDesign
+import CCDesignSystem
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme

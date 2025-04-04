@@ -39,7 +39,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "CCDesignSystem"
+            name: "CCDesignSystem",
+            resources: [
+                .process("Resources")
+            ]
         ),
         .executableTarget(
             name: "AppModule",
