@@ -8,7 +8,7 @@ struct ContentView: View {
         ZStack(alignment: .top) {
             Color.clear
             ScrollView {
-                VStack(spacing: 10, content: {
+                VStack(spacing: .cc_spacing_md, content: {
                     HStack {
                         Spacer()
                         Text("Overview")
@@ -47,7 +47,7 @@ struct ContentView: View {
                             .opacity(0.3)
                     }
                     .frame(height: 40)
-                    ScrollView {
+                    VStack(spacing: .cc_spacing_md) {
                         RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
                             .padding(.horizontal, 16)
                             .frame(height: 300)
@@ -82,7 +82,7 @@ struct ContentView: View {
         .foregroundStyle(.white)
         .background {
             Rectangle()
-                .fill(.background)
+                .fill(.background.secondary)
                 .foregroundStyle(Color(hue: 0.5, saturation: 0, brightness: 0.2))
                                  VStack(content: {
                     Rectangle()
